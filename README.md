@@ -88,6 +88,8 @@ If the tweet asked for you to tag two friends, the bot will reply with two users
 
 After every iteration, to ensure that the account does not get ratelimited by Twitter, the bot sleeps for 150 seconds (can be modified on the user's own risk) before combing through another set of tweets. This process is repeated until the user stops the program. Information about interactions by the bot using the account are printed out in the console after every iteration.
 
+To check the limits Twitter sets please refer to [Twitter's Rate Limits](https://dev.twitter.com/rest/public/rate-limits) and [Twitter’s Account Limits](https://support.twitter.com/articles/344781).
+
 ### Author
 Z1 (http://www.twitter.com/Z1RK4), follow me for further updates on the development of this project!
 
@@ -99,4 +101,4 @@ This is entirely for educational purpose. Use at your own risk and responsibilit
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ### Troubleshooting
-Rate limit exceeded => All info [here](https://github.com/imdiegoestevez/Twitter-Giveaways-Bot/issues/1)
+Any questions, issues, or feature requests? Feel free to leave a comment on this project, email me at ```slitherthuglife@gmail.com```, or message me on [Twitter](https://www.twitter.com/Z1RK4)
