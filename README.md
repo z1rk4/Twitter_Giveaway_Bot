@@ -18,7 +18,7 @@ tweepy
 ###Installation
 Install Python 3.7 from here: [download](https://www.python.org/downloads/). Then, run these two commands in a terminal or command shell:
 ```
-pip install python-twitter
+pip install tweepy
 pip install numpy
 ```
 You should also download both scripts: ``main.py`` and ``config.py``. Preferably, put them in the same folder.
