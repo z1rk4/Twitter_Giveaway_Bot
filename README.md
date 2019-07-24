@@ -38,6 +38,47 @@ the ``config.py``'s ``access_tokens`` variable under the appropriate username. Y
 If you've followed the steps correctly, now to start the bot you just need to run the ``main.py`` script. **Experiment with the variables at your own risk.**
 
 ### Setting up the ```config.py``` file
+Before starting up the bot, you have to initialize the ```config.py``` file with your information. Here is a step-by-step to set it up:
+
+First, locate this block of code:
+```
+access_tokens = {
+    "user1" : {
+        'consumer_key' : '', 
+        'consumer_secret' : '', 
+        'access_token' : '', 
+        'access_token_secret' : ''
+    }...
+ ```
+Replace ```user1``` with your twitter username/handle (without the @). Then, paste the respective access tokens in each of the four values of the respective username. You can do this for as many usernames as you want to use. This way, when you start the program, you can specify which Twitter account you want the bot to run on, and have the bot running on multiple accounts simultaneously.
+
+Next, locate this block of code:
+```
+# REQUIRED
+# Users that you would like to tag in the giveaway. Add three users here.
+tag_users = ["z1rk4", "user2", "user3"]
+```
+Replace each of the three strings with a Twitter account you want to tag (if the tweet requires you to tag someone) Only include three accounts here.
+
+Finally, locate this block of code:
+```
+#REQUIRED
+# Keywords that the bot will search for in tweets. Change/add as many as you want!
+keywords = ["giveaway", "coding", "python"]
+```
+Replace each of the strings with keywords that you want the bot to look for when searching for new tweets. For example, if I wanted to look for tweets with the words "puppy," "dog," "cat," and "rabbit," I would put ```keywords = ["puppy", "dog", "cat", "rabbit"]```
+
+You're all set! Further down the ```config.py``` file, you will see other information you can optionally provide if you would like to provide custom behavior.
+
+In this block of code:
+```
+custom_replies = {
+    "keyword1" : "reply1",
+    "keyword2" : "reply2",
+    "keyword3" : "reply3",
+}
+```
+You can specify a keyword to look for in the filtered list of tweets, and then include a special reply you want the bot to reply with. You can include as many custom replies as you want!
 
 ### How it works
 This script uses Tweepy to automatically search through tweets that match a specified keyword. The bot then filters out irrelevant tweets, then processes each tweet to look for tags within the tweet for it to perform the appropriate action.
@@ -46,3 +87,7 @@ For example, if a tweet contained the tag *retweet*, then the bot will retweet t
 If the tweet asked for you to tag two friends, the bot will reply with two users to tag from the users specified in the ```config.py``` file.
 
 After every iteration, to ensure that the account does not get ratelimited by Twitter, the bot sleeps for 150 seconds (can be modified on the user's own risk) before combing through another set of tweets. This process is repeated until the user stops the program. Information about interactions by the bot using the account are printed out in the console after every iteration.
+
+### Author
+Z1 (http://www.twitter.com/Z1RK4), follow me for further updates on the development of this project!
+
