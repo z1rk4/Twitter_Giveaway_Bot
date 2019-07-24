@@ -91,3 +91,8 @@ After every iteration, to ensure that the account does not get ratelimited by Tw
 ### Author
 Z1 (http://www.twitter.com/Z1RK4), follow me for further updates on the development of this project!
 
+### License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+### Troubleshooting
+Rate limit exceeded => All info [here](https://github.com/imdiegoestevez/Twitter-Giveaways-Bot/issues/1)
