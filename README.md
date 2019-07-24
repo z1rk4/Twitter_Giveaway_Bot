@@ -33,4 +33,4 @@ This is meant to be a short guide on how to get the twitter credentials your bot
 * Fill out all details and create the app
 * Enter to the ``Keys and Access Token`` section and create a new access token. 
 * Now copy ``Consumer Key``, ``Consumer Secret``, ``Access Token``, ``Access Token Secret`` and paste them into their right place inside
-the ``config.py``'s ``twitter_credentials`` variable.
+the ``config.py``'s ``access_tokens`` variable under the appropriate username. You can do this for as many usernames as you want.
