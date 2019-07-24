@@ -91,6 +91,10 @@ After every iteration, to ensure that the account does not get ratelimited by Tw
 ### Author
 Z1 (http://www.twitter.com/Z1RK4), follow me for further updates on the development of this project!
 
+## Disclaimer
+
+This is entirely for educational purpose. Use at your own risk and responsibility, there's a possibility that your Twitter account gets banned. I hold no liability for what you use the bot for or the consequences.
+
 ### License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
