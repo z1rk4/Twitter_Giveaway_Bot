@@ -101,4 +101,6 @@ This is entirely for educational purpose. Use at your own risk and responsibilit
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ### Troubleshooting
-Any questions, issues, or feature requests? Feel free to leave a comment on this project, email me at ```slitherthuglife@gmail.com```, or message me on [Twitter](https://www.twitter.com/Z1RK4)
+Any questions, issues, or feature requests? Feel free to leave a comment on this project, email me at ```slitherthuglife@gmail.com```, or message me on [Twitter](https://www.twitter.com/Z1RK4).
+
+Enjoy and good luck :)
