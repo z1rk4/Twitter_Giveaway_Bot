@@ -103,4 +103,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ### Troubleshooting
 Any questions, issues, or feature requests? Feel free to leave a comment on this project, email me at ```slitherthuglife@gmail.com```, or message me on [Twitter](https://www.twitter.com/Z1RK4).
 
-*Enjoy and good luck :)*
+*Enjoy and good luck :) *
