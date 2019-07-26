@@ -94,21 +94,22 @@ if __name__ == "__main__":
             latest_tweet = tweet
             tweet_text = latest_tweet.text.lower()
 
-            try:
-                tweet.user.follow()
-                
-                screen_names = [mention["screen_name"] for mention in tweet.entities["user_mentions"]]
-                for user in screen_names:
-                    api.create_friendship(user)
+            if "follow" in tweet_text.lower():
+                try:
+                    tweet.user.follow()
+                    
+                    screen_names = [mention["screen_name"] for mention in tweet.entities["user_mentions"]]
+                    for user in screen_names:
+                        api.create_friendship(user)
+                        follow_ct += 1
+                    
                     follow_ct += 1
-                
-                follow_ct += 1
 
-            except tweepy.TweepError:
-                pass
+                except tweepy.TweepError:
+                    pass
 
-            except StopIteration:
-                break    
+                except StopIteration:
+                    break    
 
 
             if "retweet" in tweet_text or "rt" in tweet_text:
