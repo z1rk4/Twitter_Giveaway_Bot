@@ -69,7 +69,12 @@ if __name__ == "__main__":
         measured_date = str(datetime.datetime.today())[0:8] + str(int(str(datetime.datetime.today())[8:10]) - 5)
         counter, follow_ct, like_ct, rt_ct, reply_ct = 0, 0, 0, 0, 0
         
-        keyword_tweets = np.array([get_relevant_tweets(keywrd, measured_date) for keywrd in config.keywords])
+        try:
+            keyword_tweets = np.array([get_relevant_tweets(keywrd, measured_date) for keywrd in config.keywords])
+        except tweepy.TweepError:
+            print("\n\nError fetching tweets. Your account may be temporarily limited. Log into your account, remove limitations, and retry.\n\n")
+            raise SystemExit
+
         user_tweets = np.array([get_tweets_from_user(handle) for handle in config.account_names])
         
         filtered_keyword_tweets = []
